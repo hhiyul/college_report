@@ -19,5 +19,5 @@ CREATE TABLE comments (
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     comment_pass VARCHAR(50) NOT NULL,
     PRIMARY KEY (comment_id),
-    FOREIGN KEY (post_num) REFERENCES post(num)
+    FOREIGN KEY (post_num) REFERENCES post(num) ON DELETE CASCADE
 );
